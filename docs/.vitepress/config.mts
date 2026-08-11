@@ -12,16 +12,6 @@ import viteImagemin from "vite-plugin-imagemin"; // 导入图片压缩插件
 import { nav } from './configs'
 import { sidebar } from './configs'
 
-export default {
-  title: '小奇 Blog',
-  description: '一个日记本',
-  base: '/rabbit-q.github.io/', // Required for GitHub Pages
-  themeConfig: {
-    nav: [{ text: 'Home', link: '/' }],
-    sidebar: [{ text: 'Guide', link: '/' }]
-    }
-}
-
 const description = ["vitepress-theme-teek 使用文档", "vitepress 主题框架"].toString();
 
 const teekConfig = defineTeekConfig({
@@ -194,6 +184,7 @@ const teekConfig = defineTeekConfig({
 export default defineConfig({
   extends: teekConfig,
   title: "小奇 Blog",
+  base: '/rabbit-q.github.io', 
   description: description,
   cleanUrls: true,
   lastUpdated: true,
