@@ -15,7 +15,7 @@ import { sidebar } from './configs'
 const description = ["vitepress-theme-teek 使用文档", "vitepress 主题框架"].toString();
 
 exportdefaultdefineConfig({
-  base: /,// 根据实际部署路径调整
+  base: '/Rabbit-Q.github.io/',// 根据实际部署路径调整
 }),
 
 const teekConfig = defineTeekConfig({
