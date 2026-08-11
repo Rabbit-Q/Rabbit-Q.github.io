@@ -12,9 +12,15 @@ import viteImagemin from "vite-plugin-imagemin"; // 导入图片压缩插件
 import { nav } from './configs'
 import { sidebar } from './configs'
 
-exportdefaultdefineConfig({
-  base:'/Rabbit-Q.github.io/',// 根据实际部署路径调整
-}),
+export default {
+  title: '小奇 Blog',
+  description: '一个日记本',
+  base: '/rabbit-q.github.io/', // Required for GitHub Pages
+  themeConfig: {
+    nav: [{ text: 'Home', link: '/' }],
+    sidebar: [{ text: 'Guide', link: '/' }]
+    }
+}
 
 const description = ["vitepress-theme-teek 使用文档", "vitepress 主题框架"].toString();
 
