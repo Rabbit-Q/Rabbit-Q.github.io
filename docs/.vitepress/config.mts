@@ -14,18 +14,9 @@ import { sidebar } from './configs'
 
 const description = ["vitepress-theme-teek 使用文档", "vitepress 主题框架"].toString();
 
-const base = "/Rabbit-Q.github.io/"; 
-export default {
-  base,  
-  // 站点级选项
-  title: "小奇 blog",
-  description: "小奇写日记的地方",
-  head: [
-
-    // 配置网站的图标（显示在浏览器的 tab 上）
-    ["link", { rel: "icon", href: `${base}favicon.ico` }],  
-  ],
-};
+exportdefaultdefineConfig({
+  base:'/Rabbit-Q.github.io/',// 根据实际部署路径调整
+}),
 
 const teekConfig = defineTeekConfig({
   author: { name: "小奇", link: "" },
