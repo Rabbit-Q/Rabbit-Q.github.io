@@ -14,10 +14,6 @@ import { sidebar } from './configs'
 
 const description = ["vitepress-theme-teek 使用文档", "vitepress 主题框架"].toString();
 
-exportdefaultdefineConfig({
-  base: '/blog/',// 根据实际部署路径调整
-}),
-
 const teekConfig = defineTeekConfig({
   author: { name: "小奇", link: "" },
 
