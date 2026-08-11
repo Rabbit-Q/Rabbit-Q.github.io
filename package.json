@@ -20,8 +20,8 @@
   },
   "scripts": {
     "docs:dev": "vitepress dev docs",
-    "docs:build": "node --max-old-space-size=28672 node_modules/vitepress/bin/vitepress.js build docs",
-    "docs:preview": "vitepress preview docs"
+    "docs:build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs"
   },
   "dependencies": {
     "@iconify/json": "^2.2.331",
