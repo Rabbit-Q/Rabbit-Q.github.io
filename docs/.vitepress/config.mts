@@ -12,6 +12,10 @@ import viteImagemin from "vite-plugin-imagemin"; // 导入图片压缩插件
 import { nav } from './configs'
 import { sidebar } from './configs'
 
+exportdefaultdefineConfig({
+  base:'/repo/',// 根据实际部署路径调整
+}),
+
 const description = ["vitepress-theme-teek 使用文档", "vitepress 主题框架"].toString();
 
 const teekConfig = defineTeekConfig({
