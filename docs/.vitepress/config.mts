@@ -6,7 +6,7 @@ import { Nav } from "./config/Nav";
 export default defineConfig({
   title: "小奇 Blog",
 
-  base: "/Rabbit-Q.github.io",
+  base: "/Rabbit-Q.github.io/",
 
   themeConfig: {
 
