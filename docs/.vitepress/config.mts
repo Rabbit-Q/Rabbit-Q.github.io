@@ -1,0 +1,25 @@
+import { defineConfig } from 'vitepress'
+import { teekConfig } from "./teekConfig.mts";
+import { Nav } from "./config/Nav";
+
+// https://vitepress.dev/reference/site-config
+export default defineConfig({
+  title: "小奇 Blog",
+
+  base: "/Rabbit-Q.github.io",
+
+  themeConfig: {
+
+    logo: "./avatar/avatar.png",
+
+    //导航栏信息
+    nav: Nav,
+
+    //文章大纲
+    outline: {
+      level: [2, 6],
+    }
+  },
+
+  extends: teekConfig,
+})
