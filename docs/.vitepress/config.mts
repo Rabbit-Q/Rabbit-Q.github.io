@@ -6,7 +6,7 @@ import { Nav } from "./config/Nav";
 export default defineConfig({
   title: "Jabin W's Blog",
 
-  base: "/vitepress-teek-blog",
+  base: "/Rabbit-Q-vitepress-teek-blog",
 
   themeConfig: {
 
